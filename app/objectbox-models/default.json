@@ -1,0 +1,116 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:6633076134461170254",
+      "lastPropertyId": "2:735247331235602338",
+      "name": "Quadro",
+      "properties": [
+        {
+          "id": "1:3935670015104470478",
+          "name": "id"
+        },
+        {
+          "id": "2:735247331235602338",
+          "name": "titulo"
+        }
+      ],
+      "relations": [
+        {
+          "id": "2:5550307235097491310",
+          "name": "listas"
+        }
+      ]
+    },
+    {
+      "id": "2:3949420305349010701",
+      "lastPropertyId": "4:3649789593600925075",
+      "name": "Cartao",
+      "properties": [
+        {
+          "id": "1:1591442985338973317",
+          "name": "id"
+        },
+        {
+          "id": "2:4225604354183796885",
+          "name": "titulo"
+        },
+        {
+          "id": "3:5027437353046977997",
+          "name": "descricao"
+        },
+        {
+          "id": "4:3649789593600925075",
+          "indexId": "2:6430969594091243786",
+          "name": "listaId"
+        }
+      ],
+      "relations": [
+        {
+          "id": "3:5003444506751398348",
+          "name": "comentarios"
+        }
+      ]
+    },
+    {
+      "id": "3:4504256656616680898",
+      "lastPropertyId": "3:7849662964507980726",
+      "name": "Lista",
+      "properties": [
+        {
+          "id": "1:7865149576331759168",
+          "name": "id"
+        },
+        {
+          "id": "2:7750426781012301472",
+          "name": "titulo"
+        },
+        {
+          "id": "3:7849662964507980726",
+          "indexId": "1:8757910733112549609",
+          "name": "quadroId"
+        }
+      ],
+      "relations": [
+        {
+          "id": "1:6268466268520027320",
+          "name": "cartoes"
+        }
+      ]
+    },
+    {
+      "id": "4:5604191367667401513",
+      "lastPropertyId": "3:2967872714168288378",
+      "name": "Comentario",
+      "properties": [
+        {
+          "id": "1:319356416453619352",
+          "name": "id"
+        },
+        {
+          "id": "2:597962261606425162",
+          "name": "comentario"
+        },
+        {
+          "id": "3:2967872714168288378",
+          "indexId": "3:7255552136402321849",
+          "name": "cartaoId"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "4:5604191367667401513",
+  "lastIndexId": "3:7255552136402321849",
+  "lastRelationId": "3:5003444506751398348",
+  "lastSequenceId": "0:0",
+  "modelVersion": 4,
+  "modelVersionParserMinimum": 4,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}
