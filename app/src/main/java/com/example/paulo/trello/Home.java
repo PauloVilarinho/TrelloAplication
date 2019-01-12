@@ -22,6 +22,7 @@ public class Home extends AppCompatActivity {
 
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,9 +30,8 @@ public class Home extends AppCompatActivity {
         box_quadros = ((App)getApplication()).getBoxStore().boxFor(Quadro.class);
         rvQuadros = findViewById(R.id.rv_quadros);
 
-        rvQuadros = findViewById(R.id.rv_quadros);
 
-        QuadrosAdapter adapter = new QuadrosAdapter(box_quadros.getAll(),this);
+        QuadrosAdapter adapter = new QuadrosAdapter(box_quadros,this);
 
         rvQuadros.setAdapter(adapter);
         rvQuadros.setLayoutManager(new LinearLayoutManager(this));
@@ -44,6 +44,7 @@ public class Home extends AppCompatActivity {
         final Intent intent = new Intent(this,CriarQuadro.class);
 
         startActivityForResult(intent,REQUEST_CODE);
+
 
     }
 
@@ -59,4 +60,6 @@ public class Home extends AppCompatActivity {
             }
         }
     }
+
+
 }

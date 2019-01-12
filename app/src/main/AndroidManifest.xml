@@ -17,7 +17,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CriarQuadro"></activity>
+        <activity android:name=".CriarQuadro" />
+        <activity android:name=".OnQuadroSelect" />
+        <activity android:name=".CriarLista"></activity>
     </application>
 
 </manifest>

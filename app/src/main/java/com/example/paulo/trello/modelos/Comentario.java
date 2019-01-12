@@ -6,7 +6,7 @@ import io.objectbox.annotation.Id;
 import io.objectbox.relation.ToOne;
 
 @Entity
-class Comentario {
+public class Comentario {
 
     @Id long id;
     private ToOne<Cartao> cartao;

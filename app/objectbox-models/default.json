@@ -17,12 +17,7 @@
           "name": "titulo"
         }
       ],
-      "relations": [
-        {
-          "id": "2:5550307235097491310",
-          "name": "listas"
-        }
-      ]
+      "relations": []
     },
     {
       "id": "2:3949420305349010701",
@@ -47,12 +42,7 @@
           "name": "listaId"
         }
       ],
-      "relations": [
-        {
-          "id": "3:5003444506751398348",
-          "name": "comentarios"
-        }
-      ]
+      "relations": []
     },
     {
       "id": "3:4504256656616680898",
@@ -73,12 +63,7 @@
           "name": "quadroId"
         }
       ],
-      "relations": [
-        {
-          "id": "1:6268466268520027320",
-          "name": "cartoes"
-        }
-      ]
+      "relations": []
     },
     {
       "id": "4:5604191367667401513",
@@ -111,6 +96,10 @@
   "retiredEntityUids": [],
   "retiredIndexUids": [],
   "retiredPropertyUids": [],
-  "retiredRelationUids": [],
+  "retiredRelationUids": [
+    6268466268520027320,
+    5550307235097491310,
+    5003444506751398348
+  ],
   "version": 1
 }

@@ -1,16 +1,18 @@
 package com.example.paulo.trello.modelos;
 
+import io.objectbox.annotation.Backlink;
 import io.objectbox.annotation.Entity;
 import io.objectbox.annotation.Id;
 import io.objectbox.relation.ToMany;
 import io.objectbox.relation.ToOne;
 
 @Entity
-class Lista {
+public class Lista {
 
     @Id long id;
-    private ToOne<Quadro> quadro;
+    public ToOne<Quadro> quadro;
     private String titulo;
+    @Backlink
     private ToMany<Cartao> cartoes;
 
 

@@ -2,4 +2,5 @@
     <string name="app_name">Trello</string>
     <string name="adicionar">+</string>
     <string name="quadros_tit">Quadros</string>
+    <string name="quadro_delete">X</string>
 </resources>
